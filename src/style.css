@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+body {
+    background-color: rgb(221, 203, 159);
+    font-size: larger;
+   
+}
+
+.search {
+    background-image: url(./assets/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;  
+    padding: 10%;
+}
+
+.result {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2% 1%;
+    border-radius: 5px;
+    margin: 2px 2px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1.2rem;
+    border-left: 5px solid rgb(127, 127, 180);
+    box-shadow: 3px 3px 3px grey;
+}
+
+.result img {
+    width: 180px;
+    border-radius: 5px;
+}
+
+.details {
+    background-color: rgba(219, 219, 219, 0.2);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    flex-direction: column;
+    gap: 1rem;
+    border-left: 5px solid rgb(175, 175, 202);
+    box-shadow: 3px 3px 3px grey;
+    align-items: flex-start;
+    font-size: 1.2rem;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease-in-out;
+}
+
+input {
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    width: 180px;
+}
+
+.hide-show {
+    max-height: 2000px;
+}
+
+
+ul {
+    width: 400px;
+}
+
+.details ul li {
+    text-indent: 10%;
+    list-style: "-";
+    list-style-position: inside;
+}
+
+.details ol li {
+    text-indent: 5%;
+    margin-left: 20px;
+}
+
